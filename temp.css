@@ -1,0 +1,76 @@
+body {
+	font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: normal;
+	max-width: 17
+}
+
+.block {
+	display: inline-block;
+	position: relative;
+	width: 146px;
+	height: 234px;
+	border-radius: 28px;
+	box-shadow: 0px 0px 10px black;
+	background-repeat: no-repeat;
+	margin: 40px;
+	text-decoration: none;
+	color: black;
+}
+
+.alkaline__metals {
+	background-image: url('./public/img/pexels-castorly-stock-3693293.jpg');
+	background-size: 100%;
+}
+
+.text__one {
+	font-size: 15px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: -26%;
+	margin-left: 22.5%;
+}
+
+.text__bottom {
+	display: inline-block;
+	font-size: 10px;
+	line-height: 10px;
+	align-items: center;
+	text-align: center;
+	margin-top: 105px;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.semicircle__one {
+	position:relative;
+	width: 100px;
+	height: 100px;
+	background:#C6E8AC;
+	border-radius:50%;
+	box-shadow: 0px 0px 15px 5px rgba(49, 115, 18, 0.25);
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	margin-top: 65%;
+}
+
+.semicircle__two {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background: #FFFFFF;
+	border-radius: 50%;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+strong {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}

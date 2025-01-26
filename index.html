@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./index.css">
+	<title>Document</title>
+</head>
+<body>
+
+		<div class="container">
+      <div class="toggle" id="toggle"  onclick="expand()">
+        <button class="menu-btn loader" id="loader">
+					<div class="inner one"></div>
+					<div class="inner two"></div>
+					<div class="inner three"></div>
+					<div class="nucleus"></div>
+        </button>
+      </div>
+    </div>
+    <div class="menu" id="menu">
+
+      <a class="item" href="#"> <!-- в href указывается путь до файла следующей странице, например: href="./index.html". # не надо ставить-->
+        <button class="menu-btn">
+          <span class="item-text">Таблица элементов</span>
+        </button>
+      </a>
+
+      <a class="item" href="#">
+        <button class="menu-btn">
+          <span class="item-text">Настройки</span>
+        </button>
+      </a>
+
+      <a class="item" href="#">
+        <button class="menu-btn">
+          <span class="item-text">Качественные реакции</span>
+        </button>
+      </a>
+
+      <a class="item" href="#">
+        <button class="menu-btn">
+          <span class="item-text">Органика</span>
+        </button>
+      </a>
+
+      <a class="item" href="#">
+        <button class="menu-btn">
+          <span class="item-text">....</span>
+        </button>
+      </a>
+
+      <a class="item" href="#">
+        <button class="menu-btn">
+          <span class="item-text">Неорганика</span>
+        </button>
+      </a>
+    </div>
+	<script>
+		let j = 0;
+		let i = document.getElementById("menu").childNodes;
+		function expand() {
+		  toggleMenu();
+		  if(j==0) {
+		    j = 1;
+		    i[1].style.transform="translateY(-160px)";
+		    i[3].style.transform="translateY(160px)";
+		    i[5].style.transform="translate(140px, 80px)";
+		    i[7].style.transform="translate(140px, -80px)";
+		    i[9].style.transform="translate(-140px, 80px)";
+		    i[11].style.transform="translate(-140px, -80px)";
+		  } else {
+		    j = 0;
+		    i[1].style.transform="translateY(0) scale(0)";
+		    i[3].style.transform="translateY(0) scale(0)";
+		    i[5].style.transform="translate(0) scale(0)";
+		    i[7].style.transform="translate(0) scale(0)";
+		    i[9].style.transform="translate(0) scale(0)";
+		    i[11].style.transform="translate(0) scale(0)";
+		  }
+		}
+
+		function toggleMenu(){
+		  document.getElementById('loader').classList.toggle('change');
+		  document.getElementById("menu").classList.toggle('is-active');
+		}
+	</script>
+</body>
+</html>
